@@ -1,0 +1,122 @@
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid-3{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card{
+    background-color: var(--primary-color);
+    color: white;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 0 5px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.card-name{
+    background-color: white;
+    color: var(--secondary-color);
+    font-size: 12px;
+    padding: 5px;
+    border: none;
+    border-radius: 15px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.card card-name{
+    background-color: transparent;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    margin: 5px 10px;
+}
+
+.btn{
+    background-color: var(--light-color);
+    color: var(--primary-color);
+    padding: 5px 20px;
+    display:block;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    align-items: center;
+}
+
+.button{
+    font-size: 1rem;
+    display: inline-block;
+    padding: 0.25rem;
+    line-height: 1.0;
+    margin-top: 1rem;
+    background-color: transparent;
+    border:2px solid white;
+    border-top-left-radius: 0.7rem;
+    border-bottom-left-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+    border-top-right-radius: 0.7rem;
+}
+
+.btn btn-light{
+    background-color: var(--light-color);
+    text-align: center;
+    margin: 0 auto;
+}
+.btn:hover{
+    transform: scale(.98);
+}
+
+/*Backgroung & Colored buttons*/
+.bg-primary, .btn-primary{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.bg-secondary, .btn-secondary{
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.bg-light, .btn-light{
+    background-color: var(--light-color);
+    color: var(--secondary-color);
+}
+
+.fas{
+    background-color: var(--light-color);
+    color: var(--secondary-color);
+    margin: 10px;
+}
+
+.my-3{
+    margin: 2rem 0;
+}
+
+.py-1{
+    padding: 1.5rem;
+}
+
